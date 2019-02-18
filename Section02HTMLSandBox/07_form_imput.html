@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php">
+        <!-- Text -->
+        <div>
+            <!--labe for="name" should match with the input id="name" to highlight the text box-->
+            <label for="name">Name</label><br>
+            <!-- input name="name" to send value to server-->
+            <input type="text" id="name" name="name">            
+        </div>
+
+        <!-- Email -->
+        <div>
+            <!--labe for="email" should match with the input id="email" to highlight the text box-->
+            <label for="email">Email</label><br>
+            <!-- input name="name" to send value to server-->
+            <input type="email" id="email" name="email" placeholder="Please enter email">            
+        </div>
+
+        <!-- TextArea -->
+        <div>
+            <!--labe for="message" should match with the input id="message" to highlight the text box-->
+            <label for="message">Message</label><br>
+            <!-- textarea name="message" to send value to server-->
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+
+        <!-- Select -->
+        <div>
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+
+        <!-- Date -->
+        <div>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+
+        <!-- Radio -->
+        <div>
+            <label for="membership">Membership</label>
+            <input type="radio" name="membership" value="simple" id="membership">Simple
+            <input type="radio" name="membership" value="standar" id="membership" checked>Standar
+            <input type="radio" name="membership" value="super" id="membership">Super
+        </div>
+        
+        <!-- Checkbox -->
+        <div>
+            <label for="likes">I like.</label>
+            <input type="checkbox" name="likes" value="bike" id="likes">Bike
+            <input type="checkbox" name="likes" value="car" id="likes" checked>Car
+            <input type="checkbox" name="likes" value="boat" id="likes">Boat
+
+        </div>
+
+        <!-- Input Submit -->
+        <input type="submit" value="Submit">
+
+        <!-- Button submit -->
+        <button type="submit">Submit</button>
+
+        <!-- Button Reset-->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
