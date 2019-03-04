@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap{
+            width: 600px;
+            height: 300px;
+            margin: 50px auto;
+            border: 5px solid blue;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        img{
+            margin: 20px auto;
+        }
+
+        p{
+            width: 300px;
+            border: 2px solid green;
+            border-radius: 10px;
+            position: relative;
+            top: -230px;
+            left: 250px;
+            display: none;
+        }
+
+        #wrap:hover p{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <img src="./images/icon.gif">
+        <p>The site is still in the process of developing content</p>
+    </div>
+    
+</body>
+</html>
