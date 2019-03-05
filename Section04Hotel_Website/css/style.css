@@ -3,10 +3,318 @@
 *{
     margin: 0;
     padding: 0;
+    /* We don't want the padding to add to the actual width of the box */
     box-sizing: border-box;
 }
 
-/* Remove the link under a tag */
+/* Main styling */
+body, html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Add more spaces between the lines */
+    line-height: 1.7em;
+}
+
+
 a{
+    /* Change color of the link */
+    color: #333;
+    /* Remove the link under a tag */
     text-decoration: none;
 }
+
+h1, h2, h3{
+    /* Add padding bottom for h1, h2, h3 so that we have more spacing */
+    padding-bottom: 20px;
+}
+
+p{
+    /* Add margin-top and margin-bottom for p */
+    margin: 10px 0;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Ultilities class - class= "container" */
+.container{
+    /* Center this div */
+    margin: auto;
+    /* max-width for responsive */
+    max-width: 1000px;
+    /* overflow:auto => always show the background  */
+    overflow: auto;
+    /* Add some padding */
+    padding: 0 20px;
+}
+
+/* color "enjoy" part */
+.text-primary{
+    color: #f7c08a;
+}
+
+/* styling .lead class */
+.lead{
+    font-size: 20px;
+}
+/* styling button */
+.btn{
+    /* change inline to inline-block */
+    display: inline-block;
+    /* font, background color */
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    /* no border for button */
+    border: none;
+    /* create pointer on the button when a mouse hover */
+    cursor: pointer;
+}
+
+.btn:hover{
+    /* Mouse hover on button, will change background and color  */
+    background: #f7c08a;
+    color: #333;
+}
+
+.btn-light{
+    background: #f4f4f4f4;
+    color: #333;
+}
+/* Background color section */
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary{
+    background: #f7c08a;
+    color: #333;
+}
+
+/* clear */
+.clr{
+    clear: both;
+}
+
+/* Padding: util for add more spacing  */
+/*  y: y-axis => top and bottom */
+.py-1{
+    padding: 10px 0;
+}
+
+.py-2{
+    padding: 20px 0;
+}
+
+.py-3{
+    padding: 30px 0;
+}
+
+/* change font size for heading */
+.l-heading{
+    font-size: 40px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* Nav bar */
+#navbar{
+    background-color: #333;
+    /* We can't read the text even though we put color here because all the text are links. We should change a tag directly */
+    /* #fff: white color */
+    color: #fff;
+    /* So that the background shows no matter what  */
+    /* Using 'overflow: auto' is a trick in CSS called a 'clearfix'. Basically, it's one of many ways that developers can keep a container from collapsing on itself. Notice that Brad used it to make sure his background was showing across the whole page, since otherwise the container didn't have enough content to stretch that far.  */
+    overflow: auto;
+    
+}
+
+#navbar a{
+    /* Change color for a tag , now we can actually see the text*/
+    color: white;
+}
+
+/* Align logo h1 to the left */
+#navbar h1{
+    float: left;
+    /* Add some padding to the top */
+    padding-top: 20px;
+} 
+
+/* Align navbar to the right */
+#navbar ul{
+    float: right;
+    /* Remove the bullet */
+    list-style: none;
+
+}
+
+#navbar ul li{
+    /* List items now are vertical but we want to them to go to horizontal */
+    float: left;
+}
+
+#navbar ul li a{
+    /* a element: change to block so that we can add padding */
+    display: block;
+    /* Add padding  */
+    padding: 20px;
+    /* Align center to a  */
+    text-align: center;
+}
+
+/* Speacial effect on Home page link*/
+#navbar ul li a:hover, #navbar ul li a.current{
+    background-color: #444;
+    color: #f7c08a;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+#showcase{
+    /* Get img url and center this image */
+    background: url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+}
+
+#showcase .showcase-content{
+    /* text color: white */
+    color: #fff;
+    /* text align center */
+    text-align: center;
+    padding-top: 200px;
+}
+
+#showcase .showcase-content h1{
+    /* Increase font-size and line-height for h1 */
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p{
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* Home Info */
+#home-info{
+    height: 400px;
+    
+}
+
+/* img to the left*/
+#home-info .info-img{
+    float: left;
+    width: 50%;
+    background: url('../img/photo-1.jpg');
+    /* We want the image to take up the whole space */
+    /* min-height: 100%; */
+    height: 100%;
+    
+}
+
+/* content to the right*/
+#home-info .info-content{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    /* If there's more content, they will hidden */
+    overflow: hidden;   
+}
+
+/* Add some space between content and a link button */
+#home-info .info-content p{
+    padding-bottom: 30px;
+}
+/* /////////////////////////////////////////////////////////////// */
+
+/* LAST SECTION */
+#features .box{
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Add margin bottom to icon */
+.box i{
+    margin-bottom: 10px;
+}
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* FOOTER */
+#main-footer{
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* ABOUT INFO */
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    width: 80%;
+    /* FOR IMG, default is inline element, we need to change to block element to center */
+    display: block;
+    margin: auto;
+    /* How to make circular image */
+    border-radius: 50%;
+}
+
+/* SECTION: TESTIMONIALS */
+#testimonials{
+    height: 600px;
+    background: url('../img/test-bg.jpg') no-repeat center center/cover;
+    padding-top: 40px;
+}
+
+#testimonials h2{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* testimonials p don't need to float-right because it within container, unlike others divs that need to be seperated */
+#testimonials .testimonials {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+/* Resize image so that id does not blow up */
+/* And float left */
+#testimonials .testimonials img{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////// */

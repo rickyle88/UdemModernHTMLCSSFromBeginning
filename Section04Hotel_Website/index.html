@@ -7,19 +7,76 @@
     <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusettes">
     <meta name="keywords" content="hotel, boston hotel, new england hotel">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Hotel BT | Welcome</title>
 </head>
 <body>
+    <!-- We need a class .container inside this div:navbar. Because we want the .container always indsde/center of the #navbar -->
     <header>
         <nav id="navbar">
-            <h1 class="logo"><a href="./index.html">HBT</a></h1>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+            <div class="container">
+                    <h1 class="logo"><a href="./index.html">HBT</a></h1>
+                    <ul>
+                        <!-- CURRENT PAGE -->
+                        <li><a class="current" href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+            </div>            
         </nav>
     </header>
 
+    <!-- Body: #showcase -->
+    <!-- We need a class .container inside this div:showcase. Because we want the .container always indsde/center of the #showcase -->
+    <div id="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, blanditiis magni sapiente cumque ratione alias accusamus, quibusdam voluptatibus inventore consequatur ipsam tempore corrupti eius delectus repellendus fugiat ad voluptate veniam?</p>
+                <a class="btn" href="./about.html">About our hotel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- class bg-dark => background-color: black; -->
+    <section id="home-info" class="bg-dark">
+        <div class="info-img"></div>
+        <div class="info-content">
+            <h2>
+                <span class="text-primary">The History</span> Of Our Hotel                
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repudiandae aliquid aspernatur, perferendis sed beatae eveniet, ratione quae odit ea nemo, sit voluptatum natus! Necessitatibus non eveniet autem eum animi.
+            </p>
+            <a class="btn btn-light" href="./about.html">Read More</a>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fas fa-hotel fa-3x"></i>
+            <h3>Great Location</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, quidem.</p>
+        </div>
+        <div class="box bg-primary">
+                <i class="fas fa-utensils fa-3x"></i>
+            <h3>Free Meals</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, quidem.</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fas fa-dumbbell fa-3x"></i>
+            <h3>Fitness Room</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, quidem.</p>
+        </div>
+    </section>
+
+    <!-- CSS clear:both -->
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <p>Hotel BT &copy; 2019, All right reserved</p>
+    </footer>
 </body>
 </html>
