@@ -238,9 +238,10 @@ p{
 /* /////////////////////////////////////////////////////////////// */
 
 /* LAST SECTION */
-#features .box{
+.box{
     float: left;
-    width: 33.3%;
+    /* display: inline-block; */
+    width: 33%;
     padding: 50px;
     text-align: center;
 }
@@ -318,3 +319,29 @@ p{
 
 
 /* /////////////////////////////////////////////////////////////// */
+/* CONTACT PAGE */
+#contact-form .form-group{
+    margin-bottom: 20px;    
+}
+
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Increase padding in input and textarea to make the size of the box bigger */
+#contact-form input, #contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea{
+    height: 200px;
+}
+
+#contact-form input:focus, #contact-form textarea:focus{
+    /* Change the color of input and text area when focused */
+    outline: none;
+    border-color: #f7c08a; 
+}
