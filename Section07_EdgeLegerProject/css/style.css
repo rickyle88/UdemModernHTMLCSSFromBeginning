@@ -34,6 +34,21 @@ p{
     text-align: center;
 }
 
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+
+.bg-primary{
+    background: #93cb52;
+    color: #fff;
+}
+
 .l-heading{
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -58,6 +73,18 @@ p{
     padding: 3rem 0;
 }
 
+.p-1{
+    padding: 1.5rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.p-3{
+    padding: 3rem;
+}
+
 .lead{
     font-size: 1.4rem;
     margin-bottom: 2rem;
@@ -80,6 +107,17 @@ p{
 .btn-dark{
     background-color: #333;
     color: white;
+}
+
+/* Remove bullet from the list */
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
 }
 /* ////////////////////////////////////// */
 /* Navbar */
@@ -174,8 +212,60 @@ p{
 
 /* ////////////////////////////////////// */
 /* Section : Who We Are */
+#who{
+    display: flex;
+    
+}
 
+/* Any divs inside, flex=1 : split column*/
+#who div{    
+    flex: 1;
+}
 
+#who .who-img{
+    background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+/* ////////////////////////////////////// */
+/* Clients */
+#clients .items{
+    display: flex;
+}
+
+/* Convert img to block, center to div */
+#clients .items img{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* ////////////////////////////////////// */
+/* Section: Contact */
+#contact{
+    display: flex;
+}
+
+/* Any divs inside, flex=1 : split column*/
+/* #contact .contact-form, #contact .map */
+/* 2 divs inside #contact */
+#contact div{
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+
+/* Label */
+#contact .contact-form label{
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
 /* ////////////////////////////////////// */
 
 

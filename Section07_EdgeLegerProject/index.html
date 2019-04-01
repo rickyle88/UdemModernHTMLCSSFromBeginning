@@ -88,14 +88,17 @@
     <!-- Section: Who We Are -->
     <!-- We want all the container going to the edge so we don't use div.container -->
     <section id="who">
-       <div class="who-img">
 
-       </div>
-       <div class="who-text bg-dark p-2">
+        <div class="who-img">
+
+        </div>
+        <div class="who-text bg-dark p-2">
             <h2 class="m-heading">
                 <span class="text-primary">Who</span> We Are
             </h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab impedit eaque labore excepturi iure consequuntur magnam laudantium. Mollitia maiores quas quam quaerat odio natus hic ipsam molestiae veritatis. Atque, accusantium.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab impedit eaque labore excepturi iure
+                consequuntur magnam laudantium. Mollitia maiores quas quam quaerat odio natus hic ipsam molestiae
+                veritatis. Atque, accusantium.</p>
             <h3>Our Team</h3>
             <ul class="list">
                 <li>Mark Smith: CEO</li>
@@ -104,9 +107,82 @@
                 <li>Janet Williams: Investment Manager</li>
                 <li>JKara Jackson: Senior Accountant</li>
             </ul>
-       </div>
+        </div>
     </section>
+
+    <!-- Section: Clients -->
+    <section id="clients" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">
+                <span>Our</span> Clients
+            </h2>
+            <!-- Wrap img between div, we need to change img to block element to center -->
+            <div class="items py-1">
+                <div>
+                    <img src="./img/logos/logo1.png" alt="Client 1">
+                </div>
+                <div>
+                    <img src="./img/logos/logo2.png" alt="Client 2">
+                </div>
+                <div>
+                    <img src="./img/logos/logo3.png" alt="Client 3">
+                </div>
+                <div>
+                    <img src="./img/logos/logo4.png" alt="Client 4">
+                </div>
+                <div>
+                    <img src="./img/logos/logo5.png" alt="Client 5">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section : Contact -->
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+            <h2 class="m-heading">
+                Contact Us
+            </h2>
+            <p>Please use the form to contact us</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message" placeholder="Enter message"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn btn-dark">
+            </form>
+        </div>
+
+        <div class="map">
+            <!-- Google Maps here  -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <p>Copyright &copy; 2019, EdgeLedger, All rights Reserved</p>
+    </footer>
+
+    <!-- Implement Google Maps API -->
+    <script src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaGhuEs_USJ5Cz8yfAhsQNCR-YaGs6Whc&callback=initMap" async defer></script>
 
 </body>
 
 </html>
+
+<!-- Google Maps API Key -->
+<!-- AIzaSyDaGhuEs_USJ5Cz8yfAhsQNCR-YaGs6Whc -->
