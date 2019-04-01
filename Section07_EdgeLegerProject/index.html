@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>EdgeLedger Financial | Accounting & Investment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- Google Fonts roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Usage -->
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1100px)" href="./css/widescreen.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
     <script src="main.js"></script>
 </head>
-<body>
-    
+
+<body id="home">
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <h1 class="logo">
+            <span class="text-primary">
+                <i class="fas fa-book-open"></i> Edge
+            </span>Ledger
+        </h1>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#who">Who</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Header Showcase -->
+    <header id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">
+                The Sky Is The Limit
+            </h1>
+            <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, unde quibusdam veniam culpa
+                voluptates sed, laudantium ab dicta omnis beatae ut nobis, iste distinctio voluptatum iure possimus quas
+                nulla modi.
+            </p>
+            <a href="#what" class="btn">Read More</a>
+        </div>
+    </header>
+
+    <!-- Section: What We Do -->
+    <section id="what" class="bg-light py-1">
+        <div class="container">
+            <h2 class="m-heading text-center"><span class="text-primary">What</span> We Do</h2>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-university fa-2x"></i>
+                    <div>
+                        <h3>Investment Banking</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <div>
+                        <h3>Portfolio Management</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fas fa-pencil-alt fa-2x"></i>
+                    <div>
+                        <h3>Tax & Custodial</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Who We Are -->
+    <!-- We want all the container going to the edge so we don't use div.container -->
+    <section id="who">
+       <div class="who-img">
+
+       </div>
+       <div class="who-text bg-dark p-2">
+            <h2 class="m-heading">
+                <span class="text-primary">Who</span> We Are
+            </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab impedit eaque labore excepturi iure consequuntur magnam laudantium. Mollitia maiores quas quam quaerat odio natus hic ipsam molestiae veritatis. Atque, accusantium.</p>
+            <h3>Our Team</h3>
+            <ul class="list">
+                <li>Mark Smith: CEO</li>
+                <li>Shannon Johnson: CFO</li>
+                <li>John Corbit: Lead Accountant</li>
+                <li>Janet Williams: Investment Manager</li>
+                <li>JKara Jackson: Senior Accountant</li>
+            </ul>
+       </div>
+    </section>
+
 </body>
+
 </html>

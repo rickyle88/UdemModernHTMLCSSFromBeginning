@@ -1,0 +1,182 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0.75rem 0;
+}
+
+/* Ultility classes */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-primary{
+    color: #93cb52;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+
+.py-3{
+    padding: 3rem 0;
+}
+
+.lead{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+
+}
+
+.btn{
+    display: inline-block;
+    color: white;
+    background-color: #93cb52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #7ab436;
+}
+
+.btn-dark{
+    background-color: #333;
+    color: white;
+}
+/* ////////////////////////////////////// */
+/* Navbar */
+#navbar{
+
+    display: flex;
+    /* adjust items to main-axis */
+    justify-content: space-between;
+
+    /* Navbar will stick to the top */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+
+}
+
+#navbar ul{
+    display: flex;
+    /* Adjust ul on the cross axis */
+    align-items: center;
+    
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover{
+    background: #93cb52;
+    border-radius: 5px;
+}
+
+
+/* ////////////////////////////////////// */
+/* Showcase */
+#showcase{
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+
+   
+}
+
+#showcase .showcase-content{
+    /* To make the height same as its container */
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    /* Align on both main + cros axis */
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;
+
+    /* Overlay */
+   
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+/* ////////////////////////////////////// */
+/* Section: What we do */
+#what .items{
+    display: flex;
+    padding: 0.5rem;
+}
+
+#what .items .item{
+    /* flex: 1; */
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Round background for icon */
+#what .items .item i{
+    background-color: #93cb52;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+/* ////////////////////////////////////// */
+/* Section : Who We Are */
+
+
+/* ////////////////////////////////////// */
+
+
+
