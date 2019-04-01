@@ -129,6 +129,7 @@ p{
 
     /* Navbar will stick to the top */
     position: sticky;
+    /* Fix position sticky for Safari */
     position: -webkit-sticky;
     top: 0;
     z-index: 1;
