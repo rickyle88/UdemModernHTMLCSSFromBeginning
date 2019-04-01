@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        /* Flex box */
+        #container{
+            display: flex;
+            /* Change direction of flex container */
+            /* flex-direction: column; */
+            flex-direction: row;
+
+            /* This flexbox will be multi line */
+            flex-wrap: wrap;
+
+            /* flex-wrap: wrap and flex-direction: row */
+            /* flex-flow: row wrap; */
+        }
+        .item{
+            background: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.75rem;
+
+            /* Make all child equal */
+            /* float:left and width: 33% */
+            flex: 1;
+        }
+
+        /* First child is 2/3 width */
+        .item:first-child{
+            /* flex: 2; */
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 4</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+        <div class="item"><h3>Item 5</h3></div>
+    </div>
+</body>
+</html>

@@ -20,9 +20,44 @@
         }
 
         header{
-            background: black;
+            background: black url("https://source.unsplash.com/daily") no-repeat center center/cover;
             color: white;
-            height: 100%;
+            /* height: 100%; */
+            height: 100vh;
+            /* Center the text */
+            text-align: center;
+            padding: 2rem;
+            padding-top: 16rem;
+        }
+
+        header h1{
+            font-size: 3rem;
+        }
+
+        header p{
+            margin: 1rem 0;
+        }
+
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: black;
+            padding: 0.75rem 2rem;
+        }
+
+        section{
+            /* background: blue; */
+            padding: 2rem;
+            /* height: 100vh; */
+        }
+
+        /* We need to use Chrome dev tools to change to mobile view => we need to adjust padding top */
+        @media(max-height: 450px){
+            header{
+                padding-top: 5rem;
+
+            }
         }
     </style>
 </head>
@@ -32,5 +67,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sed repudiandae, reiciendis ea provident asperiores similique mollitia architecto accusamus doloribus consectetur odit tempora hic earum nobis cum adipisci aut excepturi.</p>
         <a href="#" class="btn">Find Out More</a>
     </header>
+
+    <section>
+        <h3>About Our Company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam omnis nulla aliquam iure, repudiandae itaque pariatur! A, modi similique deleniti eligendi nesciunt perspiciatis minima officia enim sit eos explicabo illum.</p>
+    </section>
 </body>
 </html>
