@@ -1,0 +1,95 @@
+/* In What We Do section: Remove display:flex */
+#what .items {
+    display: block;
+}
+
+
+/* Align icon to the left */
+#what .items .item {
+    display: flex;
+    /* flex-direction: column; */
+    text-align: left;
+}
+
+/* Position icons */
+#what .items .item i{
+    margin-right: 1.2rem;
+    /* Align icon to the center of the background-color */
+    align-self: center;
+    /* Clear the margin-bottom */
+    margin-bottom: 0;
+}
+/*  */
+
+/* Smartphone */
+/* ///////////////// */
+@media(max-width: 500px){
+    /* Navbar */
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo{
+        margin-bottom: 1rem;
+    }
+
+    #navbar ul{
+        padding: 0.5rem;
+    }
+
+    /* showcase: push the button to the top */
+    #showcase .showcase-content{
+        margin-top: -2rem;
+    }
+
+    /* Who We Are: remove the image */
+    #who{
+        display: block;
+        /* Will remove img because (it is the part of flex and it needs a height to display) */
+    }
+
+    #who .who-img{
+        display: none;
+    }
+
+    /* Our Clients */
+    #clients .items img{
+        /* increase the width of img from 60% to 80%*/
+        width: 80%;
+    }
+
+    #clients .items div:last-child{
+        /* Remove last logo */
+        display: none;
+    }
+
+    /* Contact: Form and maps should be in stack */
+    #contact{
+        /* display: block; */
+        flex-direction: column;
+        /* Map: we need to add a height in order to display on the website  */
+    }
+
+    #contact .map{
+        height: 200px;
+        border: 4px solid #333;
+    }
+
+
+}
+
+/* iPhone 5 */
+@media(max-height: 568px){
+    
+    /* showcase: change the font-size for iphone 5/se */
+    /* l.heading */
+    #showcase .showcase-content h1{
+        font-size: 3rem;
+    }
+
+    /* .lead */
+    #showcase .showcase-content p{
+        font-size: 1rem;
+    }
+}
