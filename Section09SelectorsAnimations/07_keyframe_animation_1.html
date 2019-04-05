@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keyframes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        body{
+            background: #333;
+        }
+
+        .box{
+            background: white;
+            width: 200px;
+            height: 200px;
+
+            position: relative;
+
+            animation-name: animate1;
+            animation-duration: 5s;
+            animation-iteration-count: 2;   /* infinite */
+            /* After animated, it will stay with new width */
+            animation-fill-mode: forwards;  
+
+            /* Wait for 2 secs before it started */
+            animation-delay: 2s;
+
+            animation-direction: alternate;
+
+            /* slow=>fast */
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes animate1{
+            from{
+                width: 200px;
+
+                top: 0;
+            }
+
+            to{
+                width: 600px;
+                /* Turn color to red */
+                background: red;
+
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

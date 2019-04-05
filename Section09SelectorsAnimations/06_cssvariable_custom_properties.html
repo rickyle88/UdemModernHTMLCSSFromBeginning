@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Variables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <style>
+        /* Variables */
+        :root{
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+            --light-color: #f4f4f4;
+            --max-width: 1100px;
+            --box-1-width: 1;
+            --box-2-width: 2;
+        }
+
+        /* Reset */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;            
+            background: var(--light-color);
+        }
+
+        header{
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            border-bottom: 5px var(--secondary-color) solid;
+        }
+
+        .container{
+            display: flex;
+            width: var(--max-width);
+            margin: auto;
+        }
+
+        .box{
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: white;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .box-1{
+            flex: var(--box-1-width);
+        }
+
+        .box-2{
+            flex: var(--box-2-width);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, amet eos molestias earum magnam
+                temporibus.</p>
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, amet eos molestias earum magnam
+                temporibus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
