@@ -168,6 +168,10 @@ h1, h2, h3, h4, h5{
     padding: 3rem;
 }
 
+.l-heading{
+    font-size: 3rem;
+}
+
 .list li{
     padding: .5rem 0;
     border-bottom: #555 dott 1px;
@@ -182,7 +186,8 @@ h1, h2, h3, h4, h5{
 
 .page-container{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    /* will 2 items have same height */
+    grid-template-columns: 5fr 2fr;
     margin: 2rem 0;
     grid-gap: 1.5rem;
 }
@@ -317,6 +322,22 @@ h1, h2, h3, h4, h5{
     /* Grid span to takes up 2 columns from parent */
     grid-column: 2 / span 2;
 }
+
+/* In article.html */
+#article .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem;
+}
+
+#article .meta .category{
+    /* Push category tag down a little bit */
+    margin-top: 0.4rem;
+}
+
+/* In article.html */
 
 
 

@@ -1,0 +1,82 @@
+/* Navigation */
+
+#main-nav .social{
+    display: none;
+}
+
+/* Nav wil be 1 column */
+#main-nav .container{
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+}
+
+/* justify-self for grid element*/
+#main-nav .container ul,
+#main-nav .container .logo{
+    justify-self: center;
+}
+
+#main-nav ul li a{
+    padding: 0.5rem;
+}
+
+/* ////////////////////////////////////////////////// */
+/* Home article will be 2 columns */
+#home-articles .articles-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* First child will be 1 column */
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child{
+    grid-template-columns: 1fr;
+    /* remove the span */
+    grid-column: 1;
+}
+
+@media(max-width: 600px){
+    /* Stack Grid Items */
+    /* .showcase-container =>  grid-template-columns: repeat(2, 1fr);*/
+    /* To 1 column */
+    #showcase .showcase-container,
+    #home-articles .articles-container,
+    #main-footer .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* CLEAR THE SPAN FIRST IN FOOTER */
+    #main-footer .footer-container > *:last-child{
+        grid-column: 1;
+    }
+
+    /* Styling footer item */
+    #main-footer .footer-container > * {
+        border-bottom: white dotted 1px;
+        padding-bottom: 1rem;
+    }
+
+    #main-footer .footer-container > *:last-child,
+    #main-footer .footer-container > *:nth-child(4){
+        border: none;
+    }
+
+    /* About page */
+    .page-container{
+        grid-template-columns: 1fr;
+        /* text-align: center; */
+    }
+
+    /* Clear span */
+    .page-container > *:first-child{
+        grid-row: 1;
+    }
+
+    /* Meta  */
+    #article .meta{
+        flex-direction: column;
+    }
+
+    .l-heading{
+        font-size: 2rem;
+    }
+}
