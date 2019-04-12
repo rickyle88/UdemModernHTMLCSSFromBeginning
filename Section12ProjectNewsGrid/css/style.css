@@ -34,6 +34,10 @@ ul{
     list-style: none;
 }
 
+p{
+    margin: 0.5rem 0;
+}
+
 img{
     width: 100%;
 }
@@ -104,6 +108,90 @@ h1, h2, h3, h4, h5{
 .btn:hover{
     opacity: 0.8;
 }
+
+.card{
+    background: white;
+    padding: 1rem;
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: white;
+}
+
+.bg-primary{
+    background: var(--primary-color);
+    color: white;
+}
+
+.bg-secondary{
+    background: var(--secondary-color);
+    color: white;
+}
+
+.bg-dark h1,
+.bg-dark h2, 
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2, 
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2, 
+.bg-dsecondaryark h3,
+.bg-secondary a{
+    color: white;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+
+.py-3{
+    padding: 3rem 0;
+}
+
+.p-1{
+    padding: 1.5rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.p-3{
+    padding: 3rem;
+}
+
+.list li{
+    padding: .5rem 0;
+    border-bottom: #555 dott 1px;
+    width: 90%;
+}
+
+#main-footer .list li a:hover{
+    color: var(--primary-color);
+}
+
+/* Inner page grid container */
+
+.page-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+}
+
+/* adjust height of first child so that second child will take less space */
+.page-container > *:first-child{
+    grid-row: 1 /span 3;
+}
+
 
 
 /* Navigation */
@@ -195,3 +283,79 @@ h1, h2, h3, h4, h5{
 
 
 /* /////////////////////////////////////////////// */
+/* Home Articles */
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+/* Each Articles */
+/* #home-articles .articles-container article:first-child */
+#home-articles .articles-container > *:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    /* Align img to the center  */
+    align-items: center;
+
+
+    /* Grid span to takes up 2 columns from parent */
+    grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    /* Align img to the center  */
+    align-items: center;
+
+
+    /* Grid span to takes up 2 columns from parent */
+    grid-column: 2 / span 2;
+}
+
+
+
+/* /////////////////////////////////////////////// */
+/* Footer */
+#main-footer{
+    background: var(--dark-color);
+    color: white;
+}
+
+#main-footer img{
+    width: 150px;
+}
+
+#main-footer a{
+    color: white;
+}
+
+#main-footer .footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+/* Copyright  */
+#main-footer .footer-container > *:last-child{
+    background: #444;
+    grid-column: 1 / span 4;
+    padding: .5rem;
+    text-align: center;
+    font-size: .75rem;
+}
+
+#main-footer .footer-container input[type='email']{
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit']{
+    width: 90%;
+}
