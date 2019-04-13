@@ -156,5 +156,16 @@ img {
   #home-b .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
+    #home-b .stats div {
+      padding: 3rem 0; }
+      #home-b .stats div:nth-child(odd) {
+        background: #f4f4f4; }
+      #home-b .stats div:nth-child(even) {
+        background: #ccc; }
     #home-b .stats li {
       line-height: 2; }
+      #home-b .stats li.stats-title {
+        font-size: 1.5rem; }
+      #home-b .stats li.stats-number {
+        font-size: 2rem;
+        font-weight: bold; }
