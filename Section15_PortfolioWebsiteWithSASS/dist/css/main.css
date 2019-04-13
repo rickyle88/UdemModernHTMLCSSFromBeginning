@@ -1,0 +1,28 @@
+/*
+    General Styles
+*/
+/* Variables */
+/* When we compile, scss->css in the dist folder */
+/* Not like this: $bg-image: url('..dist/img/showcase.jpg'); */
+/* Should be: $bg-image: url('../img/showcase.jpg'); */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+h2, h3, h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
