@@ -3,6 +3,7 @@
 */
 
 @import 'config';
+@import 'ultilities';
 
 *{
     margin: 0;
@@ -30,4 +31,118 @@ h2, h3, h4{
 
 img{
     width: 100%;
+}
+
+/* Logo */
+#logo{
+    width: 70px;
+    height: 70px;
+
+    
+    /* In case we using text for Logo */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* //////////////////////////////////////////////////// */
+
+/* Main Nav */
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 1rem 1.5rem;
+    }
+
+    a{
+        color: #fff;
+        text-transform: uppercase;
+
+        
+        /* For hover effect: from (no) color to a color */    
+        border-bottom: 3px transparent solid;
+
+        padding-bottom: 0.5rem;
+        transition: border-bottom-color 0.5s;
+
+        &:hover{
+            border-bottom-color: $medium-color;
+        }
+
+        &.current{
+            border-color: $main-color;
+        }
+    }
+}
+
+
+/* Header */
+#header{
+
+    /* Header Home */
+    &-home{
+        background: $bg-image no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+
+
+        /* Header Content*/
+        .header-content{
+            text-align: center;
+            // margin:auto;
+            padding-top: 20%;
+
+            h1{
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
+
+    }
+
+    &-inner{
+
+    }
+}
+
+/* //////////////////////////////////////////////////// */
+
+/* Home Section */
+#home{
+
+    /* Home Section a */
+    &-a{
+        .specials{
+            margin-top: 3rem;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+
+        }
+
+        /* Icon */
+        .fas{
+            color: $main-color;
+            padding-bottom: 0.4rem;
+        }
+    }
+
+    /* Home Section b*/
+    &-b{
+        .stats{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li{
+                line-height: 2;
+            }
+        }
+    }
 }
