@@ -5,6 +5,9 @@
 /* When we compile, scss->css in the dist folder */
 /* Not like this: $bg-image: url('..dist/img/showcase.jpg'); */
 /* Should be: $bg-image: url('../img/showcase.jpg'); */
+/*
+    Set Text Color
+*/
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -36,6 +39,23 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background-color: #ffbc00; }
+
+/* Background */
+.bg-main {
+  background: #ffbc00;
+  color: #fff; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #ccc;
+  color: #000; }
 
 .lead {
   font-size: 1.3rem;
@@ -80,7 +100,7 @@ input[class^='btn-']:hover {
   margin: 0 auto 1rem auto; }
 
 /* Section title */
-.section.title {
+.section-title {
   font-size: 2rem;
   display: block;
   padding-bottom: 0.5rem;
@@ -154,6 +174,11 @@ img {
       #header-home .header-content h1 {
         font-size: 4rem;
         line-height: 1.2; }
+  #header-inner {
+    background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+    height: 5.5rem;
+    border-bottom: 3px solid #ffbc00;
+    color: #fff; }
 
 /* //////////////////////////////////////////////////// */
 /* Home Section */
@@ -192,20 +217,8 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     text-align: center;
-    /* Process step*/
-    /* Process icon*/ }
-    #home-c .process-step {
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-size: 28px;
-      background-color: #ffbc00;
-      border-radius: 50%;
-      height: 15px;
-      width: 15px;
-      line-height: 15px;
-      padding: 1rem;
-      transition: all 1s; }
+    /* Process icon*/
+    /* Process step*/ }
     #home-c .process-icon {
       border-radius: 50%;
       background: #333;
@@ -215,4 +228,75 @@ img {
       height: 70px;
       line-height: 70px;
       position: relative;
-      transform: all 1s; }
+      transition: all 1s; }
+      #home-c .process-icon:hover {
+        background: #ffbc00;
+        width: 90px;
+        height: 90px;
+        line-height: 90px; }
+        #home-c .process-icon:hover .process-step {
+          background: #333;
+          color: #fff;
+          height: 20px;
+          width: 20px;
+          line-height: 20px; }
+    #home-c .process-step {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 25px;
+      background-color: #ffbc00;
+      columns: #fff;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      line-height: 15px;
+      padding: 1rem;
+      transition: all 1s; }
+
+/* About*/
+#about-a {
+  /* Grid Area*/ }
+  #about-a .about-info {
+    display: grid;
+    grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+    grid-gap: 1rem; }
+  #about-a .bio-image {
+    grid-area: bioimage; }
+  #about-a .bio {
+    grid-area: bio;
+    border-left: 3px solid #ffbc00;
+    padding: 0.8rem; }
+  #about-a .award-1 {
+    grid-area: aw1; }
+  #about-a .award-2 {
+    grid-area: aw2; }
+  #about-a .award-3 {
+    grid-area: aw3; }
+  #about-a .award-1 .fas,
+  #about-a .award-2 .fas,
+  #about-a .award-3 .fas {
+    color: #ffbc00; }
+
+/* Footer*/
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #ffbc00;
+        cursor: pointer; }
